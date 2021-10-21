@@ -16,21 +16,17 @@ with:
 token: 'github token'
 
 ```js
-on: [push]
-
 jobs:
-  hello_world_job:
+  create_daily_plan_issue:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: create daily plan issue
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: cuixiaorui/hello-world-javascript-action@main # Uses an action in the root directory
-        id: hello
+      - name: create daily plan issue action step
+        uses: cuixiaorui/create-daily-plan-issue@main
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
         with:
-          who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          token: ${{env.TOKEN}}
 ```
