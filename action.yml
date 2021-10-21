@@ -1,0 +1,9 @@
+name: "Create Daily plan Issue"
+description: "automatic create daily plan issue for cuixiaorui/study-every-day"
+inputs:
+  token: 
+    description: "github token"
+    required: true
+runs:
+  using: "node12"
+  main: "dist/index.js"
