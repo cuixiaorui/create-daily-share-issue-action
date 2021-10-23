@@ -10,7 +10,7 @@ automatic create daily plan issue for cuixiaorui/study-every-day
 
 ## Example usage
 
-uses: cuixiaorui/create-daily-plan-issue@main
+uses: cuixiaorui/create-daily-plan-issue-action@main
 
 with:
 token: 'github token'
