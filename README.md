@@ -1,4 +1,4 @@
-# Create Daily plan Issue
+# Create Daily plan Issue Action
 
 automatic create daily plan issue for cuixiaorui/study-every-day
 
