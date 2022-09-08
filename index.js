@@ -3,8 +3,7 @@ const github = require("@actions/github");
 const dayjs = require("dayjs");
 
 (function main() {
-  // const token = core.getInput("token");
-  const token = "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";
+  const token = core.getInput("token");
   const octokit = github.getOctokit(token);
 
   createIssue(octokit);
