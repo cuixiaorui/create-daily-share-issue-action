@@ -9698,7 +9698,15 @@ function getBody() {
  
 比如：
     推荐一篇讲解 vue3  diff 算法的文章（what）
-    文章里面通过大量的图片和可运行的demo来讲解 vue3 的 diff 算法  看完秒懂（why）`;
+    文章里面通过大量的图片和可运行的demo来讲解 vue3 的 diff 算法  看完秒懂（why）
+   
+直接copy下面的格式:
+  ## what
+  (在这里写上分享的是什么)
+
+  ## why
+  (在这里写上为什么分享)
+    `;
 }
 
 function getTitle() {
